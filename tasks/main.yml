@@ -1,0 +1,11 @@
+---
+- name: 'Install packages'
+  zypper:
+      name:
+          - 'obs-studio'
+          - 'libQt5Xml5' # OBS-Studio wants that
+          - 'ffmpeg-3' # From Packman repo!
+          - 'vlc'
+          - 'darktable'
+            #- 'inkscape'
+      state: present
